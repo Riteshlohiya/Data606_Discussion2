@@ -1,0 +1,49 @@
+---
+title: "Data605_Discussion2"
+author: "Ritesh Lohiya"
+date: "September 5, 2018"
+output: html_document
+---
+
+# I will be solving Exercise DM.C22
+
+#install.packages('matlib')
+
+```{r}
+library(matlib)
+```
+
+Theorem DMST : Determinant of Matrices(A) of Size 2
+
+det(A) = ad - bc
+
+```{r}
+cat("Matrix A", "\n", "\n")
+```
+
+```{r}
+(A = matrix(c(1,3,2,6), ncol = 2, byrow = TRUE))
+```
+
+Now calculating the determinant manually:
+
+```{r}
+(Manual_Det_A = (1*6 - 2*3))
+```
+
+Manual_Det_A is 0
+
+Now lets try using the function in R:
+
+```{r}
+(Det_Using_R = det(A))
+```
+
+Det_Using_R is also 0
+
+
+
+
+
+
+
